@@ -33,6 +33,29 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
+  $black:   #272822;
+  $red:     #f92672;
+  $green:   #a6e22e;
+  $yellow:  #f4bf75;
+  $blue:    #66d9ef;
+  $magenta: #ae81ff;
+  $cyan:    #a1efe4;
+  $white:   #f8f8f2;
+  $orange:  #FFA500;
+  $umblue:  #00274C;
+  $ummaize: #FFCB05;
+
+  --umich-blue0:            #00203f;
+  --umich-blue1:            #002345;
+  --umich-blue2:            #00274C;
+  --umich-blue-extra:       #002a52;
+
+  --umich-maize0:           #DAAC00;
+  --umich-maize1:           #EFBD00;
+  --umich-maize2:           #FFCB05;
+  --umich-maize-extra:      #FFCF19;
+
+
   --jp-shadow-base-lightness: 0;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
@@ -87,10 +110,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: var(--umich-blue2);
+  --jp-border-color1: var(--umich-blue2);
+  --jp-border-color2: var(--umich-maize2);
+  --jp-border-color3: var(--umich-maize2);
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -118,20 +141,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  /*--jp-ui-font-color0: rgba(0, 0, 0, 1);*/
+  /*--jp-ui-font-color1: rgba(0, 0, 0, 0.87);*/
+  /*--jp-ui-font-color2: rgba(0, 0, 0, 0.54);*/
+  /*--jp-ui-font-color3: rgba(0, 0, 0, 0.38);*/
+
+  /*--jp-ui-font-color0: var(--umich-maize2);*/
+  /*--jp-ui-font-color1: var(--umich-maize2);*/
+  /*--jp-ui-font-color2: var(--umich-blue2);*/
+  /*--jp-ui-font-color3: var(--umich-blue0);*/
+
+  --jp-ui-font-color0: var(--umich-maize2);
+  --jp-ui-font-color1: var(--umich-maize2);
+  --jp-ui-font-color2: var(--umich-blue2);
+  --jp-ui-font-color3: var(--umich-blue0);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
+  /*--jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);*/
+  /*--jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);*/
+  /*--jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);*/
+  /*--jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);*/
+
+  /*--jp-ui-inverse-font-color0: var(--umich-maize2);*/
+  /*--jp-ui-inverse-font-color1: var(--umich-maize2);*/
+  /*--jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.54);*/
+  /*--jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.38);*/
+
+  --jp-ui-inverse-font-color0: var(--umich-maize2);
+  --jp-ui-inverse-font-color1: var(--umich-maize2);
+  --jp-ui-inverse-font-color2: var(--umich-maize2);
+  --jp-ui-inverse-font-color3: var(--umich-maize2);
 
   /* Content Fonts
    *
@@ -163,9 +206,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color0: rgba(0, 0, 0, 1);
   --jp-content-font-color1: rgba(0, 0, 0, 0.87);
   --jp-content-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-content-font-color3: var(--umich-maize2);
 
-  --jp-content-link-color: var(--md-blue-700);
+  --jp-content-link-color: var(--umich-blue0);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -199,9 +242,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-layout-color0: white;
   --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
-  --jp-layout-color4: var(--md-grey-600);
+  /*--jp-layout-color1: var(--umich-blue2);*/
+  /*--jp-layout-color2: var(--umich-blue2);*/
+  /*--jp-layout-color3: var(--umich-maize2);*/
+  /*--jp-layout-color4: var(--umich-maize-extra);*/
+  --jp-layout-color2: var(--umich-blue2);
+  --jp-layout-color3: var(--umich-maize2);
+  --jp-layout-color4: var(--umich-maize-extra);
 
   /* Inverse Layout
    *
@@ -209,23 +256,25 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
-  --jp-inverse-layout-color4: var(--md-grey-600);
+  --jp-inverse-layout-color0: var(--umich-maize2);
+  --jp-inverse-layout-color1: var(--umich-maize2);
+  --jp-inverse-layout-color2: var(--umich-maize2);
+  --jp-inverse-layout-color3: var(--umich-maize2);
+  --jp-inverse-layout-color4: var(--umich-blue2);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-700);
-  --jp-brand-color1: var(--md-blue-500);
-  --jp-brand-color2: var(--md-blue-300);
-  --jp-brand-color3: var(--md-blue-100);
+  --jp-brand-color0: var(--umich-maize2);
+  --jp-brand-color1: var(--umich-blue2);
+  --jp-brand-color2: var(--umich-maize2);
+  --jp-brand-color3: var(--umich-blue-extra);
+  --jp-brand-color4: var(--umich-maize2);
 
-  --jp-accent-color0: var(--md-green-700);
-  --jp-accent-color1: var(--md-green-500);
-  --jp-accent-color2: var(--md-green-300);
-  --jp-accent-color3: var(--md-green-100);
+  --jp-accent-color0: var(--umich-maize2);
+  --jp-accent-color1: var(--umich-blue2);
+  --jp-accent-color2: var(--umich-maize2);
+  --jp-accent-color3: var(--umich-blue2);
+  --jp-accent-color4: var(--umich-blue2);
 
   /* State colors (warn, error, success, info) */
 
@@ -309,9 +358,11 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color1);
+  /*--jp-toolbar-border-color: var(--jp-border-color1);*/
+  --jp-toolbar-border-color: var(--umich-blue2);
   --jp-toolbar-micro-height: 8px;
-  --jp-toolbar-background: var(--jp-layout-color1);
+  /*--jp-toolbar-background: var(--jp-layout-color1);*/
+  --jp-toolbar-background: var(--umich-blue2);
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
   --jp-toolbar-active-background: var(--md-grey-300);
@@ -322,7 +373,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-box-shadow: inset 0 0 2px var(--umich-maize2);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
   --jp-input-background: var(--md-grey-100);
@@ -369,4 +420,42 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
+}
+
+
+/* Replace the default JupyterLab Logo */
+#jp-MainLogo > svg {
+    visibility: hidden;
+}
+
+#jp-MainLogo {
+  background-image: url('./university of michigan logo.svg');
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body[data-jp-theme-name="Go Blue!"] .jp-DirListing-content {
+  /*background: #004c94;*/
+  /*background: #0053a2;*/
+  background: var(--umich-blue2);
+ }
+
+body[data-jp-theme-name="Go Blue!"] .jp-DirListing-header {
+  /*background: #004c94;*/
+  /*background: #0053a2;*/
+  background: var(--umich-blue2);
+ }
+
+#jp-top-panel {
+  background: var(--umich-blue2);
+}
+#jp-menu-panel {
+  background: var(--umich-blue2);
+}
+#jp-MainMenu {
+  background: var(--umich-blue2);
+}
+.jp-FileBrowser {
+  background: var(--umich-blue2);
 }
