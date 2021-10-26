@@ -13,7 +13,9 @@ const extension: JupyterFrontEndPlugin<void> = {
   requires: [IThemeManager],
   autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension @jamcon/jupyterlab-theme-umich is activated!');
+    console.log(
+        'JupyterLab extension @jamcon/jupyterlab-theme-umich is activated!'
+    );
     const style = '@jamcon/jupyterlab-theme-umich/index.css';
 
     manager.register({
